@@ -1,0 +1,19 @@
+Using ReactJS Steps
+
+1. npx create-react-app . on the root directory using command line
+2. npm install autoprefixer tailwindcss postcss postcss-cli
+3. Create a styles folder inside src then inside the style folder, create tailwind.css and main.css file
+4. npx tailwindcss init --full
+5. create postcss.config.js on the root directory and paste this code :
+    
+    const tailwindcss = require('tailwindcss');
+
+    module.exports = {
+        plugins: [
+            tailwindcss('./tailwind.config.js'),
+            require('autoprefixer')
+        ]
+    }
+
+6. import the main.css inside the index.js in src folder
+7.And we're done!   
