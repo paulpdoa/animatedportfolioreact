@@ -23,7 +23,7 @@ const Header = () => {
             initial={{ fontSize: 0 }}
             animate={{ fontSize: '100px' }}
             transition={{ delay:1.2, duration:0.5 }}
-            className="py-20 px-5 -px-5 font-bold text-center md:text-left text-6xl md:text-8xl select-none">STUDENT WEB<br/> DEVELOPER</motion.h1>
+            className="py-20 px-5 -px-5 font-bold text-center md:text-left text-6xl md:text-8xl select-none uppercase">Web Developer</motion.h1>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -4,6 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 import {useState} from 'react';
 
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {motion} from 'framer-motion';
 
 
 const Contact = () => {
@@ -23,7 +24,11 @@ const Contact = () => {
         <Helmet>
             <title>paulpdoa | Contact</title>
         </Helmet>
-            <div className="px-5">
+            <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition= {{ delay: 0.2,duration:0.5 }}
+            className="px-5">
                 <h1 className="font-bold uppercase text-8xl py-5 select-none">Contact me</h1>
                 <form className="grid grid-cols-2 border-2 border-gray-600 rounded-xl">
                     <div className="px-5 py-5">
@@ -74,7 +79,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </form>
-            </div>
+            </motion.div>
         </div>
     )
 }
