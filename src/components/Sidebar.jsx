@@ -4,7 +4,7 @@ const Sidebar = ({nextPage}) => {
     
     return (
         <motion.nav 
-        className="hidden md:block relative col-span-1 md:text-right px-5 py-5 text-white bg-red-500 h-screen fixed"
+        className="hidden md:block relative col-span-1 md:text-right px-5 py-5 text-white bg-red-500 h-screen"
         initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
         transition={{ type:'spring',stiffness: 30,duration:0.5 }}

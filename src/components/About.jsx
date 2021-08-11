@@ -17,8 +17,8 @@ const About = () => {
                 initial={{ x:'200vw' }}
                 animate={{ x: 0 }}
                 transition={{ delay:0 ,duration:0.8, type:'tween' }}
-                className="font-bold uppercase text-8xl py-5">About</motion.h1> 
-                <div className="grid grid-cols-2 py-16 relative">
+                className="font-bold uppercase text-5xl md:text-8xl py-5">About Me</motion.h1> 
+                <div className="md:grid md:grid-cols-2 md:py-16 relative">
                     <div>
                         <motion.p 
                         initial={{ opacity: 0 }}
@@ -31,9 +31,9 @@ const About = () => {
                     animate={{ y: 0 }}
                     transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
                     className="rounded-full shadow-inner bg-gray-200 absolute right-0">
-                        <img className="py-15 filter invert-0" src="/me.png" alt="me" />
+                        <img className="py-15 filter invert-0 w-30 md:w-80" src="/me.png" alt="me" />
                     </motion.div>
-                    
+        
                 </div>
            </div>
         </motion.div>

@@ -7,13 +7,13 @@ function App() {
     const [page,setPage] = useState('header');
 
     const nextPage = (active) => {
-      setPage(active)
+      setPage(active);
     }
 
   return (
     <>
      <Sidebar nextPage={nextPage}  />
-     <Main page={page} />
+     <Main page={page} nextPage={nextPage} />
     </>
   );
 }

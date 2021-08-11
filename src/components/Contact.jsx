@@ -29,20 +29,20 @@ const Contact = () => {
             animate={{ opacity: 1 }}
             transition= {{ delay: 0.2,duration:0.5 }}
             className="px-5">
-                <h1 className="font-bold uppercase text-8xl py-5 select-none">Contact me</h1>
-                <form className="grid grid-cols-2 border-2 border-gray-600 rounded-xl">
+                <h1 className="font-bold uppercase text-5xl md:text-8xl md:py-0 py-5 select-none">Contact me</h1>
+                <form className="md:grid grid-cols-2 border-2 border-gray-600 rounded-xl">
                     <div className="px-5 py-5">
                         <div className="py-2">
                             <label htmlFor="firstname">First Name</label><br/>
-                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none" type="text" placeholder="Enter first name"  />
+                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none w-full md:w-auto" type="text" placeholder="Enter first name"  />
                         </div>
                         <div className="py-2">
                             <label htmlFor="email">Email</label><br/>
-                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none" type="email" placeholder="Enter email"  />
+                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none w-full md:w-auto" type="email" placeholder="Enter email"  />
                         </div>
                         <div className="py-2">
                             <label htmlFor="firstname">Message</label><br/>
-                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none" type="text" placeholder="Enter message"  />
+                            <input className="bg-gray-100 p-2 border-b-2 border-gray-600 outline-none w-full md:w-auto" type="text" placeholder="Enter message"  />
                         </div>
                         <div>
                             <button className="p-2 bg-gray-900 text-gray-200 rounded-full mt-2 w-40 outline-none transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl">Contact Me</button>
@@ -67,14 +67,14 @@ const Contact = () => {
                             <h2 className="font-semibold text-xl text-gray-800">Based In</h2>
                             <p>Tanza, Cavite</p>
                         </div>
-                        <div className="flex justify-evenly px-15">
+                        <div className="flex justify-evenly px-15 mt-1 p-5">
                             <SocialIcon className="transition transform hover:scale-150" url="https://www.facebook.com/paulpdoa/" />
                             <SocialIcon className="transition transform hover:scale-150" url="https://www.instagram.com/paulpdoa/?hl=en" />
                             <SocialIcon className="transition transform hover:scale-150" url="https://discord.com/users/846637204800798720" />
                             <SocialIcon className="transition transform hover:scale-150" url="https://github.com/paulpdoa" />
                             <SocialIcon className="transition transform hover:scale-150" url="https://mail.google.com/mail/u/0/#inbox" />
                         </div>
-                        <div className="absolute bottom-0 py-10">
+                        <div className="md:absolute md:bottom-0 py-10">
                             <h3 className="font-light text-gray-500 select-none">This page is created with ReactJS and TailwindCSS</h3>
                         </div>
                     </div>

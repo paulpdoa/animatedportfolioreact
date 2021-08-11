@@ -13,8 +13,8 @@ const Stack = () => {
                initial={{ y:'-100vw' }}
                animate={{ y: 0 }}
                transition={{ duration:1.0,type:'tween' }}
-               className="font-bold uppercase text-8xl py-5">Skills & Technology</motion.h1>
-                <div className="grid grid-cols-3 justify-items-center -mt-8">
+               className="font-bold uppercase md:text-8xl py-5 text-5xl">Skill & Technology</motion.h1>
+                <div className="grid grid-cols-3 justify-items-center mt-20 md:-mt-8">
                     <motion.svg
                     initial={{ x:'100vw' }}
                     animate={{ x: 0 }}
